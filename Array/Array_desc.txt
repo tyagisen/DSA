@@ -1,0 +1,122 @@
+
+Array
+
+Array is a kind of data structure which is simple and widely used data structure that stores elements of same type. They come in various types based on structure, storage
+And usages.
+
+Various types of data structures are: -
+1. One-dimensional Array(1D Array)
+	A simple list of elements stored in contiguous memory location.
+2. Multi-dimensional Array
+	a. Two-dimensional array (2D array)
+		Array consisting multiple rows and columns.
+		arr = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ]
+	b.Three-dimensional array (3D array)
+		arr = [ 
+			[[1, 2], [3, 4]], 
+			[[5, 6], [7, 8]] 
+			]
+	c. Jagged Array
+		An array of array where there each array has different lengths.
+		arr = [[1,1,2,4],[3,5], [7,40,22,11]	
+	d. Dynamic array
+		The array where the length grow or shrink dynamically (python list, java array, c++ vector]
+		arr = []
+		arr.append()
+		arr.append(2)
+	e. Sparse Array
+		Stores only non-zero element with their indices to save memory.
+	•	Stores only non-zero elements with their indices to save memory.
+	•	Used in cases where most elements are zeros.
+	•	Example:iniCopyEdit[(0,2,5), (3,4,7), (5,1,9)]  # (row, col, value)
+	•	
+6. Associative Array (Dictionary)
+	•	Key-value pair storage (common in Python dictionaries, JavaScript objects).
+	•	Example:iniCopyEditarr = {"name": "Alice", "age": 25}
+	•	
+7. Bit Array (BitSet)
+	•	Stores bits instead of full integers to save memory.
+	•	Example: 1010101
+8. Circular Array (Ring Buffer)
+	•	Used in queue implementations where the end connects to the beginning.
+	•	Example: [4, 5, 6] wraps around to [6, 4, 5].
+9. Boolean Array
+	•	Contains only True or False values.
+	•	Example: [True, False, True, False]
+10. Parallel Arrays
+	•	Multiple arrays used together where elements at the same index relate.
+	•	Example:iniCopyEditnames = ["Alice", "Bob", "Charlie"]
+	•	ages = [25, 30, 22]
+	•	
+11. Fixed-Size vs. Variable-Size Arrays
+	•	Fixed-size: Declared with a set size and cannot grow (int arr[10] in C++).
+	•	Variable-size: Can expand dynamically (List<int> arr = new List<int>() in C#).
+12. Heap-Allocated vs. Stack-Allocated Arrays
+	•	Stack-allocated: Fixed size and stored in stack memory (fast access).
+	•	Heap-allocated: Dynamically allocated and stored in heap memory (slower but flexible).
+13. Matrix (Special 2D Array)
+	•	Used in mathematical and scientific computing.
+	•	Example:luaCopyEdit[[1, 2], 
+	•	 [3, 4]]
+	•	
+14. Padded Arrays
+	•	Extra unused space is added for performance optimization.
+
+
+
+Key operations that are done in this data structure
+
+1.  Accessing 
+	O(1)  time complexity using index
+2. Searching 
+	2.1. Linear search or sequential search. O(1)
+		Checks each element in the data structure one by one until the target element is found.
+	Time complexity:
+		worst case: o(n) when there is no element which we are searching for or is at the last position.
+		Best case: o(1) when the element we are searching is at the first position.
+	Use case:
+		When we are searching for unsorted data or small size data.
+		works on both sorted or unsorted data.
+	2.2 Interval search( Efficient search)
+	This search includes various types of search like.
+		Binary Search
+		Ternary search 
+		Jump search
+		Interpolation
+		Exponential search
+	2.3. Specialised searching techniques
+		Fibonacci Search: Similar to binary search but uses Fibonacci numbers for searching.
+		Hashing (Hash Table Lookup): Uses O(1) average time complexity for searching.
+		Depth-First Search (DFS) & Breadth-First Search (BFS): Used in graph and tree searching.
+
+
+
+
+
+Arrays and Strings are fundamental data structures in Data Structures and Algorithms (DSA). Let's go over the key concepts, operations, and problems related to each.
+
+1. Arrays
+An array is a fixed-size, contiguous data structure that stores elements of the same type.
+Key Operations
+	1	Accessing Elements – O(1) time complexity using index.
+	2	Searching
+	◦	Linear Search – O(n)
+	◦	Binary Search (sorted array) – O(log n)
+	3	Insertion – O(n) in the worst case (shifting elements).
+	4	Deletion – O(n) in the worst case (shifting elements).
+	5	Sorting Algorithms
+	◦	QuickSort – O(n log n)
+	◦	MergeSort – O(n log n)
+	◦	Bubble Sort, Selection Sort, Insertion Sort – O(n²)
+Common Array Problems
+	•	Kadane’s Algorithm (Maximum Subarray Sum) – O(n)
+	•	Two Sum (using HashMap or Two Pointer)
+	•	Dutch National Flag Algorithm (Sort 0s, 1s, and 2s)
+	•	Rotate an Array (Cyclic Replacements)
+	•	Find Missing Number (XOR or Sum Approach)
+	•	Merge Intervals
+	•	Subarray Sum Equals K
+
+
+
+		
